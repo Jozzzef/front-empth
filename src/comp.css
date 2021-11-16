@@ -50,3 +50,25 @@
     transform: scale(.95);
     background-color: #495867;
 }
+
+@media (max-aspect-ratio: 4/3) and (max-width: 750px){
+    .ans1, .ans2{
+        margin: 10px;
+        padding: 10px;
+        width: 25vw;
+        font-size: 4vw;
+        background-color: #CE796B;
+        border-radius: 10px;
+        transition: .4s ease;
+    }
+    .ans1:hover, .ans2:hover{
+        background-color: grey;
+    }
+    .selected{
+        transform: scale(.95);
+        background-color: grey;
+    }
+    .adam_empth{
+        font-size: 80%;
+    }
+}

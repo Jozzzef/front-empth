@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css';
 import axios from 'axios'
 import {
@@ -34,7 +34,12 @@ function App() {
     }
   }
 
-  const control = Math.round(Math.random()) === 0 // control = ones who do not see the second page
+  //set who is the control group
+  const [control, setControl] = useState(.5)
+  useEffect(() => {
+    setControl(Math.round(Math.random()) === 0)// control = ones who do not see the second page
+  }, [])
+
   const [data_q1, setData_q1] = useState(null)
   const [data_q2, setData_q2] = useState(null)
   const [data_q3, setData_q3] = useState(null)
@@ -78,7 +83,7 @@ function App() {
             case 7:
               return (<QuestionFourPageSeven d={data_q4} set_func={setData_q4}></QuestionFourPageSeven>)
             case 8:
-              return (<EndPageEight></EndPageEight>)
+              return (<EndPageEight can_submit={!data_has_null}></EndPageEight>)
             case 9:
               return (<Bye></Bye>)
             default: // case 0

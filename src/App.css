@@ -9,6 +9,7 @@ body{
 
 .App{
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 .App-header{
   position: absolute;
@@ -102,4 +103,75 @@ body{
 
 .disabled_b{
   background-color: grey;
+}
+
+@media (max-aspect-ratio: 4/3){
+.App-header{
+  padding: 2px;
+  height: 5vh;
+  font-size: 100%;
+  text-align: center;
+}
+.Page{
+  width: calc(90vw - 10px);
+  left: 5vw;
+  height: calc(75vh - 10px);
+  top: 10vh;
+}
+.nextbutton{
+  width: 50vw;
+  left: 25vw;
+  height: 7.5vw;
+}
+.backbutton{
+  width: 15vw;
+  top: 90vh;
+  left: 5vw;
+  height: 7.5vw;
+}
+.App{
+  height: 105vh;
+}
+}
+
+@media (max-aspect-ratio: 4/3) and (max-width: 750px){
+  .Page{
+    font-size: 130%;
+  }
+  .nextbutton{
+    font-size: 120%;
+  }
+  .backbutton{
+    font-size: 120%;
+  }
+}
+
+@media (min-aspect-ratio: 4/3) and (max-width: 1300px){
+  .Page{
+    font-size: 130%;
+  }
+  .nextbutton{
+    font-size: 120%;
+  }
+  .backbutton{
+    font-size: 120%;
+  }
+  .App{
+    height: 105vh;
+  }
+}
+
+@media (min-aspect-ratio: 5/3) and (max-width: 900px){
+  .Page{
+    font-size: 100%;
+  }
+  .nextbutton{
+    font-size: 100%;
+  }
+  .backbutton{
+    font-size: 100%;
+  }
+  .App{
+    height: 105vh;
+  }
 }
