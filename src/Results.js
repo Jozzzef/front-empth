@@ -11,7 +11,7 @@ function Results() {
   const [dataTable, setDataTable] = useState([])
 
   useEffect(()=>{
-    axios.get('http://localhost:4000/')
+    axios.get('http://localhost:4100/')
     .then((res) => {
       // handle success
       const response = res.data

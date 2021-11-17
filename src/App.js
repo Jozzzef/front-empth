@@ -49,7 +49,7 @@ function App() {
 
   const sendData = (data) => {
     console.log("sending data: ", data)
-    axios.post('http://localhost:4000/', data)
+    axios.post('http://localhost:4100/', data)
       .then(function (response) {
       console.log(response);
     })
