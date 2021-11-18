@@ -25,7 +25,7 @@ function EmpthPageOneopt(props) {
                     <div>
                     <p style={{fontSize:"70%"}}>Module: Please take a minute to read and digest the following statement</p>
                     <p>...</p>
-                    <p className="adam_empth">Adam has an anxiety disorder that hinders him socially. He gets panic attacks around social situations, which have put him in the hospital multiple times. Specifically the fear of people leaving him, and his defense mechanism that resulted from this is coldness to the world. He currently goes to therapy and hopes to become better socially.</p>
+                    <p className="adam_empth">Adam has an anxiety disorder that hinders him socially. He gets panic attacks around social situations, which have put him in the hospital multiple times. The reason why he feels this anxiety is because of his fear of people leaving him, and his defense mechanism that resulted from this is coldness to the world. He currently goes to therapy and hopes to become better socially.</p>
                     <p>...</p>
                     <p style={{fontSize:"78%"}}>It turns out you have matched with Adam on a friend finding app (please see the next two modules)</p>
             </div>
