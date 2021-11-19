@@ -11,7 +11,7 @@ function Results() {
   const [dataTable, setDataTable] = useState([])
 
   useEffect(()=>{
-    axios.get('https://137.184.175.22:4100/')
+    axios.get('https://137.184.175.22:4200/api')
     .then((res) => {
       // handle success
       const response = res.data

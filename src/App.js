@@ -49,7 +49,7 @@ function App() {
 
   const sendData = (data) => {
     console.log("sending data: ", data)
-    axios.post('https://137.184.175.22:4100/', data)
+    axios.post('http://137.184.175.22:4200/api', data)
       .then(function (response) {
       console.log(response);
     })
